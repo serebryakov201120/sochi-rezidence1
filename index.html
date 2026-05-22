@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резиденция 330 м² в Сочи • Мацеста</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Навигация -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <h3 class="text-2xl font-semibold">Резиденция Мацеста</h3>
+            <div class="flex gap-10 text-sm font-medium">
+                <a href="#about" class="hover:text-amber-800 transition-colors">О доме</a>
+                <a href="#gallery" class="hover:text-amber-800 transition-colors">Галерея</a>
+                <a href="#location" class="hover:text-amber-800 transition-colors">Район</a>
+                <a href="#contact" class="hover:text-amber-800 transition-colors">Связаться</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="min-h-screen bg-cover bg-center flex items-center relative" 
+            style="background-image: linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.55)), url('hero.jpg');">
+        <div class="max-w-5xl mx-auto px-6 text-center text-white pt-20">
+            <p class="uppercase tracking-[4px] text-amber-200 text-sm mb-4">Сочи • Мацеста</p>
+            <h1 class="text-6xl md:text-7xl leading-tight font-light mb-6">
+                Резиденция<br>330 м²
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12 opacity-90">
+                Три этажа • Свой двор • Прямая продажа от собственника
+            </p>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                    class="bg-white text-stone-900 px-14 py-7 rounded-full text-lg font-medium hover:bg-amber-50 transition-all duration-300 shadow-xl">
+                Посмотреть дом лично
+            </button>
+        </div>
+    </header>
+
+    <!-- О доме -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl text-center mb-12">О резиденции</h2>
+            <div class="prose prose-lg max-w-none text-stone-700 leading-relaxed">
+                <p class="text-xl">Трёхэтажный дом 330 м² построен в 2015 году <strong>для собственного проживания</strong>. Монолит + керамзитобетонные блоки, сейсмоустойчивость 9 баллов.</p>
+                <p>Первый этаж полностью готов и выполнен в спокойной светлой гамме. Второй и третий этажи — в состоянии предчистовой отделки (все коммуникации проведены, тёплые полы, окна установлены).</p>
+                <p><strong>Планировка:</strong> 9 изолированных комнат, 4 санузла, 3 гостиные, 2 кухонные зоны, мастер-спальня с собственной ванной, 3 балкона с видом на зелень.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl text-center mb-16">Галерея</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="hero.jpg" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" alt="Фасад">
+                <img src="images/photo1.jpg" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" alt="Интерьер">
+                <img src="images/photo2.jpg" class="rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500" alt="Участок">
+                <!-- Добавляй сюда новые фото по мере необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Район -->
+    <section id="location" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-5xl text-center mb-16">Район Мацеста</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <i class="fa-solid fa-tree text-4xl text-emerald-600 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Мацестинский парк</h3>
+                            <p class="text-stone-600">2 минуты пешком. Идеальное место для прогулок с детьми и пробежек.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <i class="fa-solid fa-school text-4xl text-amber-700 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Школа и детский сад</h3>
+                            <p class="text-stone-600">В шаговой доступности</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <i class="fa-solid fa-car text-4xl text-blue-600 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Центр Сочи</h3>
+                            <p class="text-stone-600">15 минут на машине</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <i class="fa-solid fa-train text-4xl text-stone-600 mt-1"></i>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Ж/д станция Мацеста</h3>
+                            <p class="text-stone-600">Рядом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-28 bg-stone-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-light mb-6">Готовы посмотреть дом?</h2>
+            <p class="text-3xl mb-4">39 500 000 ₽</p>
+            <p class="text-xl mb-12 text-stone-400">Торг возможен после осмотра</p>
+            
+            <div class="max-w-md mx-auto bg-white/10 backdrop-blur-2xl p-12 rounded-3xl">
+                <form id="contactForm" class="space-y-6">
+                    <input type="text" name="name" placeholder="Имя" required class="w-full bg-transparent border border-white/30 rounded-2xl px-6 py-5 focus:outline-none">
+                    <input type="tel" name="phone" placeholder="Телефон или Telegram" required class="w-full bg-transparent border border-white/30 rounded-2xl px-6 py-5 focus:outline-none">
+                    <textarea name="message" placeholder="Когда планируете приехать в Сочи?" rows="4" class="w-full bg-transparent border border-white/30 rounded-2xl px-6 py-5 focus:outline-none"></textarea>
+                    <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 py-7 rounded-2xl text-lg font-medium transition">Написать Даниилу</button>
+                </form>
+            </div>
+
+            <div class="mt-12 text-xl">
+                Даниил<br>
+                <a href="tel:+79884109848" class="hover:text-amber-400">+7 988 410-98-48</a><br>
+                <a href="https://t.me/d_s_1120" target="_blank" class="text-amber-400 hover:underline">Telegram @d_s_1120</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
