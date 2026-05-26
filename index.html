@@ -10,14 +10,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
         body { font-family: 'Inter', system-ui, sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        
+
         .section-title {
             font-size: 2.8rem;
-            line-height: 1.1;
+            line-height: 1.05;
         }
+
         @media (max-width: 768px) {
             .section-title {
-                font-size: 2.25rem;
+                font-size: 2.15rem !important;
+                margin-bottom: 2rem !important;
             }
         }
     </style>
@@ -58,7 +60,7 @@
     <!-- О доме -->
     <section id="about" class="py-24 bg-zinc-900">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="section-title text-5xl text-center mb-12">О резиденции</h2>
+            <h2 class="section-title text-center text-white mb-12">О резиденции</h2>
             <div class="space-y-8 text-zinc-300 text-[17px] leading-relaxed">
                 <p><strong>Резиденция 330 м² в Сочи.</strong> Три этажа, свой двор. Прямая продажа от собственника. Полный пакет документов готов к сделке. Объект подходит под семейную ипотеку.</p>
                 
@@ -76,9 +78,9 @@
     <!-- Галерея -->
     <section id="gallery" class="py-24 bg-zinc-950">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-title text-5xl text-center mb-12">Галерея</h2>
+            <h2 class="section-title text-center text-white mb-12">Галерея</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <img src="hero.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
+                <img src="hero.jpg" class="rounded-3xl shadow-2xl" alt="Фасад дома">
                 <img src="images/photo1.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
                 <img src="images/photo2.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
             </div>
@@ -88,7 +90,7 @@
     <!-- Район -->
     <section id="location" class="py-24 bg-zinc-900">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="section-title text-5xl text-center mb-16">Район Мацеста</h2>
+            <h2 class="section-title text-center text-white mb-16">Район Мацеста</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-10">
                     <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
