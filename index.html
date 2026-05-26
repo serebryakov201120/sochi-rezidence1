@@ -45,101 +45,81 @@
         </div>
     </header>
 
-    <!-- О доме - ПОЛНЫЙ ТЕКСТ -->
+    <!-- О доме - УЛУЧШЕННЫЙ ВИД -->
     <section id="about" class="py-24 bg-zinc-900">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-5xl text-center mb-12">О резиденции</h2>
-            <div class="prose prose-lg max-w-none text-zinc-300 leading-relaxed">
-                <p>Резиденция 330 м² в Сочи. Три этажа, свой двор. Прямая продажа от собственника. Полный пакет документов готов к сделке. Объект подходит под семейную ипотеку.</p>
-                <p>Трёхэтажный дом 330 м² построен в 2015 году для собственного проживания. Материал стен — монолит, керамзитобетонные блоки, сейсмоустойчивость 9 баллов.</p>
-                <p>Первый этаж — полностью готов, выполнен по проекту в спокойной, светлой гамме. Просторная кухня-гостиная, 3 спальни, санузел, котельная.</p>
+            <div class="space-y-8 text-zinc-300 text-[17px] leading-relaxed">
+                <p><strong>Резиденция 330 м² в Сочи.</strong> Три этажа, свой двор. Прямая продажа от собственника. Полный пакет документов готов к сделке. Объект подходит под семейную ипотеку.</p>
+                
+                <p>Трёхэтажный дом 330 м² построен в 2015 году для собственного проживания. Материал стен — монолит + керамзитобетонные блоки, сейсмоустойчивость 9 баллов.</p>
+                
+                <p>Первый этаж полностью готов и выполнен в спокойной светлой гамме. Просторная кухня-гостиная, 3 спальни, санузел, котельная.</p>
+                
                 <p>Второй и третий этажи — в состоянии предчистовой отделки. Проведены все коммуникации, установлены окна, выполнена стяжка тёплых полов.</p>
+                
                 <p><strong>Планировка:</strong> 9 изолированных комнат, 4 санузла, 3 гостиные, 2 кухонные зоны, мастер-спальня с собственной ванной, 3 балкона с видом на зелень Мацестинского парка.</p>
             </div>
         </div>
     </section>
 
-    <!-- Галерея -->
-    <section id="gallery" class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl text-center mb-16">Галерея</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <img src="hero.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
-                <img src="images/photo1.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
-                <img src="images/photo2.jpg" class="rounded-3xl shadow-2xl" alt="Дом">
+    <!-- Район -->
+    <section id="location" class="py-24 bg-zinc-900">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-5xl text-center mb-16">Район Мацеста</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-10">
+                    <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
+                        <i class="fa-solid fa-tree text-4xl text-emerald-500 mt-1 group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">Мацестинский парк</h3>
+                            <p class="text-zinc-400">2 минуты пешком</p>
+                        </div>
+                    </div>
+                    <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
+                        <i class="fa-solid fa-school text-4xl text-amber-400 mt-1 group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">Школа и детский сад</h3>
+                            <p class="text-zinc-400">В шаговой доступности</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-10">
+                    <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
+                        <i class="fa-solid fa-water text-4xl text-blue-400 mt-1 group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">Море</h3>
+                            <p class="text-zinc-400">15–20 минут пешком</p>
+                        </div>
+                    </div>
+                    <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
+                        <i class="fa-solid fa-car text-4xl text-blue-500 mt-1 group-hover:scale-110 transition-transform"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold">Центр Сочи</h3>
+                            <p class="text-zinc-400">15 минут на машине</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Яндекс Карта -->
+            <div class="mt-16">
+                <h3 class="text-2xl text-center mb-6">Расположение на карте</h3>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border border-zinc-700">
+                    <iframe 
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890&source=constructor" 
+                        width="100%" 
+                        height="420" 
+                        frameborder="0">
+                    </iframe>
+                </div>
+                <p class="text-center text-zinc-500 mt-4">Улица Малая, Мацеста, Сочи</p>
             </div>
         </div>
     </section>
 
-    <!-- Район -->
-<section id="location" class="py-24 bg-zinc-900">
-    <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-5xl text-center mb-16">Район Мацеста</h2>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-10">
-                <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
-                    <i class="fa-solid fa-tree text-4xl text-emerald-500 mt-1 group-hover:scale-110 transition-transform"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Мацестинский парк</h3>
-                        <p class="text-zinc-400">2 минуты пешком</p>
-                    </div>
-                </div>
-
-                <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
-                    <i class="fa-solid fa-school text-4xl text-amber-400 mt-1 group-hover:scale-110 transition-transform"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Школа и детский сад</h3>
-                        <p class="text-zinc-400">В шаговой доступности</p>
-                    </div>
-                </div>
-
-                <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
-                    <i class="fa-solid fa-water text-4xl text-blue-400 mt-1 group-hover:scale-110 transition-transform"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Море</h3>
-                        <p class="text-zinc-400">15–20 минут пешком / 5 минут на машине</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-10">
-                <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
-                    <i class="fa-solid fa-car text-4xl text-blue-500 mt-1 group-hover:scale-110 transition-transform"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Центр Сочи</h3>
-                        <p class="text-zinc-400">15 минут на машине</p>
-                    </div>
-                </div>
-
-                <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
-                    <i class="fa-solid fa-train text-4xl text-zinc-400 mt-1 group-hover:scale-110 transition-transform"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold">Ж/д станция Мацеста</h3>
-                        <p class="text-zinc-400">Рядом</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Карта -->
-        <div class="mt-16">
-            <h3 class="text-2xl text-center mb-6">Расположение на карте</h3>
-            <div class="rounded-3xl overflow-hidden shadow-2xl border border-zinc-700">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.123456789!2d39.123456789!3d43.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z0YPQu9C10YHQutC-0L3QvtC5INCc0LjQvdC-0L3QuNC6!5e0!3m2!1sru!2sru!4v1234567890" 
-                    width="100%" 
-                    height="420" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-            <p class="text-center text-zinc-500 mt-4 text-sm">Улица Малая, Мацеста, Сочи</p>
-        </div>
-    </div>
-</section>
-    <!-- Контакты -->
+    <!-- Контакты (оставляем как было) -->
     <section id="contact" class="py-28 bg-black">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-5xl font-light mb-6">Готовы посмотреть дом?</h2>
