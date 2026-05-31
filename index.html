@@ -24,10 +24,11 @@
 </head>
 <body class="bg-zinc-950 text-zinc-200">
 
-    <!-- Навигация (упрощённая) -->
+    <!-- Навигация -->
     <nav class="fixed top-0 w-full bg-zinc-950/95 backdrop-blur-md z-50 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-center md:justify-end items-center">
-            <div class="flex gap-6 md:gap-10 text-sm font-medium">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h3 class="text-2xl font-semibold">Резиденция Мацеста</h3>
+            <div class="flex gap-8 text-sm font-medium">
                 <a href="#about" class="hover:text-amber-400 transition-colors">О доме</a>
                 <a href="#gallery" class="hover:text-amber-400 transition-colors">Галерея</a>
                 <a href="#location" class="hover:text-amber-400 transition-colors">Район</a>
@@ -37,9 +38,9 @@
     </nav>
 
     <!-- Hero -->
-    <header class="min-h-screen bg-cover bg-center flex items-center relative pt-16" 
+    <header class="min-h-screen bg-cover bg-center flex items-center relative" 
             style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.6)), url('hero.jpg');">
-        <div class="max-w-5xl mx-auto px-6 text-center text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center text-white pt-20">
             <p class="uppercase tracking-[4px] text-amber-300 text-sm mb-4">Сочи • Мацеста</p>
             <h1 class="text-5xl md:text-7xl leading-tight font-light mb-6">
                 Резиденция<br>330 м²
@@ -126,34 +127,34 @@
     </section>
 
     <!-- Контакты -->
-<section id="contact" class="py-28 bg-black">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-5xl font-light mb-6">Готовы посмотреть дом?</h2>
-        <p class="text-4xl mb-4 text-amber-400">40 000 000 ₽</p>
-        <p class="text-xl mb-12 text-zinc-400">Торг возможен после осмотра</p>
-        
-        <div class="max-w-md mx-auto bg-zinc-900 p-10 rounded-3xl border border-zinc-700">
-            <form action="https://formspree.io/f/xredyvbj" method="POST">
-                <input type="text" name="name" placeholder="Имя" required 
-                       class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-4 focus:outline-none">
-                
-                <input type="tel" name="phone" placeholder="Телефон или Telegram" required 
-                       class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-4 focus:outline-none">
-                
-                <textarea name="message" placeholder="Когда планируете приехать в Сочи? Есть ли вопросы?" rows="4"
-                          class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-6 focus:outline-none"></textarea>
-                
-                <button type="submit" 
-                        class="w-full bg-amber-600 hover:bg-amber-500 py-6 rounded-2xl text-lg font-medium transition">
-                    Связаться
-                </button>
-            </form>
+    <section id="contact" class="py-28 bg-black">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-light mb-6">Готовы посмотреть дом?</h2>
+            <p class="text-4xl mb-4 text-amber-400">40 000 000 ₽</p>
+            <p class="text-xl mb-12 text-zinc-400">Торг возможен после осмотра</p>
+            
+            <div class="max-w-md mx-auto bg-zinc-900 p-10 rounded-3xl border border-zinc-700">
+                <form action="https://formspree.io/f/xredyvbj" method="POST">
+                    <input type="text" name="name" placeholder="Имя" required 
+                           class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-4 focus:outline-none">
+                    <input type="tel" name="phone" placeholder="Телефон или Telegram" required 
+                           class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-4 focus:outline-none">
+                    <textarea name="message" placeholder="Когда планируете приехать в Сочи? Есть ли вопросы?" rows="4"
+                              class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-5 mb-6 focus:outline-none"></textarea>
+                    <button type="submit" 
+                            class="w-full bg-amber-600 hover:bg-amber-500 py-6 rounded-2xl text-lg font-medium transition">
+                        Связаться
+                    </button>
+                </form>
 
-            <a href="https://t.me/d_s_1120" target="_blank" 
-               class="mt-6 block bg-[#229ED9] hover:bg-[#1a8ac4] py-6 rounded-2xl text-lg font-medium flex items-center justify-center gap-3">
-                <i class="fa-brands fa-telegram text-3xl"></i>
-                Написать в Telegram
-            </a>
+                <a href="https://t.me/d_s_1120" target="_blank" 
+                   class="mt-6 block bg-[#229ED9] hover:bg-[#1a8ac4] py-6 rounded-2xl text-lg font-medium flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-telegram text-3xl"></i>
+                    Написать в Telegram
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+</body>
+</html>
