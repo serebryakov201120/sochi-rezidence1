@@ -17,7 +17,11 @@
         }
         @media (max-width: 768px) {
             .section-title {
-                font-size: 2.15rem !important;
+                font-size: 2.1rem !important;
+            }
+            nav {
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
     </style>
@@ -26,9 +30,9 @@
 
     <!-- Навигация -->
     <nav class="fixed top-0 w-full bg-zinc-950/95 backdrop-blur-md z-50 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h3 class="text-2xl font-semibold">Резиденция Мацеста</h3>
-            <div class="flex gap-8 text-sm font-medium">
+            <div class="flex gap-6 md:gap-8 text-sm font-medium">
                 <a href="#about" class="hover:text-amber-400 transition-colors">О доме</a>
                 <a href="#gallery" class="hover:text-amber-400 transition-colors">Галерея</a>
                 <a href="#location" class="hover:text-amber-400 transition-colors">Район</a>
@@ -38,9 +42,9 @@
     </nav>
 
     <!-- Hero -->
-    <header class="min-h-screen bg-cover bg-center flex items-center relative" 
+    <header class="min-h-screen bg-cover bg-center flex items-center relative pt-16" 
             style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.6)), url('hero.jpg');">
-        <div class="max-w-5xl mx-auto px-6 text-center text-white pt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center text-white">
             <p class="uppercase tracking-[4px] text-amber-300 text-sm mb-4">Сочи • Мацеста</p>
             <h1 class="text-5xl md:text-7xl leading-tight font-light mb-6">
                 Резиденция<br>330 м²
@@ -89,7 +93,6 @@
     <section id="location" class="py-24 bg-zinc-900">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="section-title text-center text-white mb-16">Район Мацеста</h2>
-            
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-10">
                     <div class="group flex gap-6 items-start hover:bg-zinc-800/50 p-4 rounded-2xl transition-all duration-300">
@@ -123,21 +126,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Яндекс Карта с адресом -->
-            <div class="mt-16">
-                <h3 class="text-2xl text-center mb-6">Расположение на карте</h3>
-                <div class="rounded-3xl overflow-hidden shadow-2xl border border-zinc-700">
-                    <iframe 
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&source=constructor" 
-                        width="100%" 
-                        height="450" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <p class="text-center text-zinc-500 mt-4">Улица Малая, Мацеста, Сочи</p>
             </div>
         </div>
     </section>
